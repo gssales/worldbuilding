@@ -1,0 +1,58 @@
+{
+  "extends": "react-app",
+  "env": {
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "plugins": ["unicorn", "react-hooks"],
+  "rules": {
+    // Standard
+    "jsx-quotes": "error",
+    "no-multi-spaces": "error",
+
+    // React
+    "react/no-multi-comp": "error",
+    "react/prefer-es6-class": "error",
+    "react/prefer-stateless-function": "error",
+    "react/jsx-pascal-case": "error",
+    "react/jsx-closing-bracket-location": "off",
+    "react/jsx-closing-tag-location": "error",
+    "react/jsx-tag-spacing": "error",
+    "react/jsx-curly-spacing": "error",
+    "react/jsx-boolean-value": "error",
+    "react/no-string-refs": "error",
+    "react/jsx-wrap-multilines": "error",
+    "react/self-closing-comp": "error",
+    "react/jsx-no-bind": "error",
+    "react/require-render-return": "error",
+    "react/sort-comp": "error",
+    "react/no-is-mounted": "error",
+
+    // React Hooks
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+
+    // JSX-a11y
+    "jsx-a11y/alt-text": "error",
+    "jsx-a11y/img-redundant-alt": "error",
+    "jsx-a11y/aria-role": "error",
+    "jsx-a11y/no-access-key": "error",
+    "jsx-a11y/href-no-hash": "off",
+
+    // Unicorn
+    "unicorn/regex-shorthand": "error",
+    "unicorn/prefer-node-remove": "error",
+    "unicorn/prefer-node-append": "error",
+    "unicorn/prefer-includes": "error",
+    "unicorn/prefer-flat-map": "error",
+    "unicorn/no-for-loop": "error",
+    "unicorn/no-fn-reference-in-iterator": "error",
+    "unicorn/no-console-spaces": "error",
+    "unicorn/no-array-instanceof": "error",
+    "unicorn/new-for-builtins": "error",
+    "unicorn/catch-error-name": "error"
+  }
+}
